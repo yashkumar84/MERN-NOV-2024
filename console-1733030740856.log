@@ -1,0 +1,130 @@
+//Non Primitive Datatypes
+undefined
+var yash = 10;
+undefined
+1. Array
+2. Objects
+3. Functions
+VM252:1 Uncaught SyntaxError: Unexpected identifier 'Array'
+// 1. Array
+// 2. Objects
+// 3. Functions
+undefined
+var arr = [1,2,3,4,5,6,7,8,9];
+undefined
+arr.length;
+9
+arr[4];
+5
+var arr1 = [56,57,67,80];
+undefined
+arr1[2];
+67
+var Yash = [56,57,67,80];
+undefined
+Yash[2];
+67
+Yash.push(100);
+5
+Yash;
+(5) [56, 57, 67, 80, 100]
+Yash.pop();
+100
+Yash;
+(4) [56, 57, 67, 80]
+Yash.unshift(100);
+5
+Yash;
+(5) [100, 56, 57, 67, 80]
+Yash.shift();
+100
+Yash;
+(4) [56, 57, 67, 80]
+Yash.splice(2 ,1 );
+[67]
+Yash;
+(3) [56, 57, 80]
+Yash.splice(1,2);
+(2) [57, 80]
+Yash;
+[56]
+Yash.splice(1 , 0 , 57 , 80);
+[]
+Yash;
+(3) [56, 57, 80]
+Yash.splice(1 , 1 , 60);
+[57]
+Yash;
+(3) [56, 60, 80]
+Yash.splice(1 , 1 , 45,46,47);
+[60]
+Yash;
+(5) [56, 45, 46, 47, 80]
+Yash.splice(1 , 1 , "Abcd");
+[45]
+Yash;
+(5) [56, 'Abcd', 46, 47, 80]0: 561: "Abcd"2: 463: 474: 80length: 5[[Prototype]]: Array(0)
+Yash.includes(81);
+false
+//Objects 
+undefined
+var golu = {
+    name : "Golu",
+    address : "Muradnagar",
+    age : 21
+}
+undefined
+golu.age;
+21
+golu.name;
+'Golu'
+var mob = {
+    name : "Moto",
+    ram : 4,
+    rom : 64,
+    price : 10000\
+}
+VM1603:5 Uncaught SyntaxError: Invalid or unexpected token
+var mob = {
+    name : "Moto",
+    ram : 4,
+    rom : 64,
+    price : 10000
+}
+undefined
+mob.name;
+'Moto'
+mob.price;
+10000
+var objArr = [{name : "Golu" , age : 21} , {} , {}];
+undefined
+objArr[0].name;
+'Golu'
+golu;
+{name: 'Golu', address: 'Muradnagar', age: 21}
+golu.work = "Student";
+'Student'
+golu;
+{name: 'Golu', address: 'Muradnagar', age: 21, work: 'Student'}
+var dhoni = {name : "Dhoni", four : 400};
+undefined
+dhoni.four;
+400
+dhoni.6 = 200;
+VM1997:1 Uncaught SyntaxError: Unexpected number
+dhoni[6] = 200;
+200
+dhoi;
+VM2051:1 Uncaught ReferenceError: dhoi is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2051:1
+dhoni;
+{6: 200, name: 'Dhoni', four: 400}
+dhoni[6];
+200
+dhoni["four"];
+400
+delete dhoni.four;
+true
+dhoni;
+{6: 200, name: 'Dhoni'}
