@@ -1,0 +1,101 @@
+//Undefined
+undefined
+var a;
+undefined
+a;
+undefined
+typeof a;
+'undefined'
+a  10;
+VM182:1 Uncaught SyntaxError: Unexpected number
+a = 10;
+10
+typeof a;
+'number'
+a;
+10
+a = null;
+null
+a = 10;
+10
+a = "Yash";
+'Yash'
+typeof a;
+'string'
+a == 10;
+false
+a = 10;
+10
+typeof a;
+'number'
+a = "sdfds";
+'sdfds'
+typeof a;
+'string'
+//boolean
+undefined
+a = true;
+true
+typeof a;
+'boolean'
+//bigint 
+undefined
+a = 3742389438938732487234874238723478234782368723467234632678423;
+3.742389438938733e+60
+a = 3742389438938732487234874238723478234782368723467234632678423n;
+3742389438938732487234874238723478234782368723467234632678423n
+typeof a;
+'bigint'
+//undefined
+undefined
+var b;
+undefined
+b;
+undefined
+typeof b;
+'undefined'
+//null
+undefined
+a;
+3742389438938732487234874238723478234782368723467234632678423n
+a = null;
+null
+a = 90;
+90
+//Symbol
+undefined
+a = Symbol("Yash");
+Symbol(Yash)
+b = Symbol("Yash");
+Symbol(Yash)
+c = "Yash";
+'Yash'
+var d = "Yash";
+undefined
+c == d;
+true
+a == b;
+false
+//Non Prmitive Datatypes 
+undefined
+1. Array
+
+VM1258:1 Uncaught SyntaxError: Unexpected identifier 'Array'
+1. Array
+2. Object
+3. Functions 
+VM1334:1 Uncaught SyntaxError: Unexpected identifier 'Array'
+// 1. Array
+// 2. Object
+// 3. Functions 
+undefined
+var arr = [];
+undefined
+var arr = [1,2,3,4,"Yash",true , Symbol("Yash")];
+undefined
+arr;
+(7) [1, 2, 3, 4, 'Yash', true, Symbol(Yash)]0: 11: 22: 33: 44: "Yash"5: true6: Symbol(Yash)length: 7[[Prototype]]: Array(0)
+arr.length;
+7
+arr[0];
+1
