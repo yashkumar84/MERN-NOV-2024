@@ -1,0 +1,198 @@
+//Functions 
+undefined
+// Operators
+undefined
+var a = 10;
+undefined
+var b = 20;
+undefined
+var c = a + b;
+undefined
+var c = a - b;
+undefined
+//Arithmetic Operators
+undefined
+// + , - , * , / , ** , % , ++ , --
+undefined
+var c = 9/3;
+undefined
+c;
+3
+2 ** 3
+8
+3 ** 2;
+9
+9 % 3;
+0
+9 % 1;
+0
+9 % 2;
+1
+9 / 2l
+VM532:1 Uncaught SyntaxError: Invalid or unexpected token
+9 / 2;
+4.5
+// Binary Operators
+undefined
+//Unary Operators
+undefined
+var a = 10;
+undefined
+a;
+10
+a++; // a = a + 1;
+10
+a;
+11
+a++;
+11
+a;
+12
+console.log(a++);
+VM887:1 12
+undefined
+a;
+13
+console.log(a++);
+VM944:1 13
+undefined
+console.log(a);
+VM955:1 14
+undefined
+++a;
+15
+console.log(++a);
+VM1041:1 16
+undefined
+a--;
+16
+a;
+15
+console.log(a--);
+VM1109:1 15
+undefined
+console.log(a);
+VM1118:1 14
+undefined
+console.log(--a);
+VM1131:1 13
+undefined
+//Logical operators
+undefined
+// && , || , !
+undefined
+// Comparision Operators
+undefined
+a;
+13
+b;
+20
+> , < ,>= , <= , == , === , != , !==
+VM1468:1 Uncaught SyntaxError: Unexpected token '>'
+// > , < ,>= , <= , == , === , != , !==
+undefined
+a > b;
+false
+b > a;
+true
+a < b;
+true
+b < a;
+false
+b = 13;
+13
+a < b;
+false
+a > b;
+false
+a <= b;
+true
+a >= b;
+true
+a == b;
+true
+a != b;
+false
+a === b;
+true
+1 == "10";
+false
+10 == "10";
+true
+a ===b;
+true
+10 === "10";
+false
+10 === 10;
+true
+// != , !==
+undefined
+10 != "10";
+false
+10 !== "10";
+true
+//Logical operators
+undefined
+// && , || , !
+undefined
+a = 10;
+10
+b = 11;
+11
+var c = 12;
+undefined
+a > b && b > c;
+false
+a < b && b < c;
+true
+a > b || b > c;
+false
+!(a > b);
+true
+//Conditionals 
+undefined
+if(a > b){
+    console.log("A is Greater Than B");
+}else{
+    console.log("B is Greater than A");
+}
+VM2538:4 B is Greater than A
+undefined
+a;
+10
+b;
+11
+c;
+12
+if(a > b && a > c ){
+    console.log("A is Greater than B and C");
+}else if(b > a && b > c){
+    console.log("B is greater Than A and C");
+}else {
+    console.log("C is Greater than A and B");
+}
+VM2858:6 C is Greater than A and B
+undefined
+if(a > b && a > c )
+    console.log("A is Greater than B and C");
+else if(b > a && b > c)
+    console.log("B is greater Than A and C");
+else 
+    console.log("C is Greater than A and B");
+
+VM2883:6 C is Greater than A and B
+undefined
+if(a > b && a > c )console.log("A is Greater than B and C");
+else if(b > a && b > c)console.log("B is greater Than A and C");
+else console.log("C is Greater than A and B");
+
+VM2893:3 C is Greater than A and B
+undefined
+// Leap year 
+undefined
+var year = 2000;
+undefined
+int a = 10;
+VM2987:1 Uncaught SyntaxError: Unexpected identifier 'a'
+var a = 10;
+undefined
