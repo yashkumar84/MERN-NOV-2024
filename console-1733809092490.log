@@ -1,0 +1,27 @@
+var i = 0;
+undefined
+while(i < 10){
+    console.log("Hello" , i);
+    ++i;
+}
+
+VM32:2 Hello 0
+VM32:2 Hello 1
+VM32:2 Hello 2
+VM32:2 Hello 3
+VM32:2 Hello 4
+VM32:2 Hello 5
+VM32:2 Hello 6
+VM32:2 Hello 7
+VM32:2 Hello 8
+VM32:2 Hello 9
+10
+//do while
+undefined
+i = 0;
+do{
+    console.log("Hello" , i);
+    ++i;
+}while(i < 0);
+VM134:3 Hello 0
+1
