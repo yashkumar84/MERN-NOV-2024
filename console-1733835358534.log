@@ -1,0 +1,69 @@
+//Objects
+undefined
+var dhoni = {
+    name : "Ms Dhoni",
+    age : 44,
+    fours : 500
+}
+undefined
+dhoni.age;
+44
+dhoni.fours;
+500
+dhoni.address = "Jharkhand";
+'Jharkhand'
+dhoni;
+{name: 'Ms Dhoni', age: 44, fours: 500, address: 'Jharkhand'}
+dhoni.address;
+'Jharkhand'
+dhoni.6 = 300;
+VM464:1 Uncaught SyntaxError: Unexpected number
+dhoni[6]= 300;
+300
+dhoni;
+{6: 300, name: 'Ms Dhoni', age: 44, fours: 500, address: 'Jharkhand'}6: 300address: "Jharkhand"age: 44fours: 500name: "Ms Dhoni"[[Prototype]]: Object
+dhoni.6;
+VM550:1 Uncaught SyntaxError: Unexpected number
+dhoni[6];\
+VM560:1 Uncaught SyntaxError: Invalid or unexpected token
+dhoni[6];
+300
+dhoni["name"];
+'Ms Dhoni'
+dhoni["century"] = 70;
+70
+dhoni.century;
+70
+dhoni.century = 80;
+80
+dhoni.century;
+80
+delete dhoni.century;
+true
+dhoni;
+{6: 300, name: 'Ms Dhoni', age: 44, fours: 500, address: 'Jharkhand'}
+delete dhoni[6];
+true
+dhoni;
+{name: 'Ms Dhoni', age: 44, fours: 500, address: 'Jharkhand'}address: "Jharkhand"age: 44fours: 500name: "Ms Dhoni"[[Prototype]]: Object
+var arr = [{name : "Yash" , maths : 50 , science : 60} , {name : 
+    "Ashutosh" , maths : 60 , science : 70} , {name : "Rahul", maths : 70 , science : 80}];
+undefined
+arr[0];
+{name: 'Yash', maths: 50, science: 60}
+arr[0].name;
+'Yash'
+for(var ele of arr){
+    console.log(ele.name);
+}
+VM1240:2 Yash
+VM1240:2 Ashutosh
+VM1240:2 Rahul
+undefined
+for(var ele of arr){
+    console.log(ele.science);
+}
+VM1294:2 60
+VM1294:2 70
+VM1294:2 80
+undefined
