@@ -1,0 +1,139 @@
+var arr = [10,20,30,40,50]
+undefined
+arr.includes(30);
+true
+arr.includes(30 , 3);
+false
+arr.indexOf(30);
+2
+arr.slice(1 , 4 );
+(3) [20, 30, 40]
+arr.lastIndexOf(30);
+2
+//Objects 
+undefined
+var yash = {
+    name : "Yash",
+    age : 15,
+    maths : 30,
+    hindi : 35,
+    science : 40
+}
+undefined
+yash instanceof Array;
+false
+typeof yash;
+'object'
+yash instanceof Object;
+true
+var dhoni = {
+    name : "MS Dhoni",
+    age : 44,
+    century : 70,
+    four : 500
+    
+}
+undefined
+dhoni.age;
+44
+dhoni.century;
+70
+dhoni;
+{name: 'MS Dhoni', age: 44, century: 70, four: 500}
+dhoni.address = "Jharkhand";
+'Jharkhand'
+dhoni
+{name: 'MS Dhoni', age: 44, century: 70, four: 500, address: 'Jharkhand'}address: "Jharkhand"age: 44century: 70four: 500name: "MS Dhoni"[[Prototype]]: Object
+dhoni.g;
+undefined
+dhoni.6 = 300;
+VM1208:1 Uncaught SyntaxError: Unexpected number
+dhoni[6] = 300;
+300
+dhoni;
+{6: 300, name: 'MS Dhoni', age: 44, century: 70, four: 500, address: 'Jharkhand'}6: 300address: "Jharkhand"age: 44century: 70four: 500name: "MS Dhoni"[[Prototype]]: Object
+dhoni[6];
+300
+dhoni.first Name
+VM1338:1 Uncaught SyntaxError: Unexpected identifier 'Name'
+dhoni["First Name"] = "MS";
+'MS'
+dhoni;
+{6: 300, name: 'MS Dhoni', age: 44, century: 70, four: 500, address: 'Jharkhand', …}6: 300First Name: "MS"address: "Jharkhand"age: 44century: 70four: 500name: "MS Dhoni"[[Prototype]]: Object
+dhoni["century"];
+70
+dhoni.age = 90;
+90
+delete dhoni[6];
+true
+dhoni;
+{name: 'MS Dhoni', age: 90, century: 70, four: 500, address: 'Jharkhand', …}
+arr;
+(5) [10, 20, 30, 40, 50]
+for(var ele of arr){
+    console.log(ele);
+}
+VM1665:2 10
+VM1665:2 20
+VM1665:2 30
+VM1665:2 40
+VM1665:2 50
+undefined
+for(var i in arr){
+    console.log(i);
+}
+VM1689:2 0
+VM1689:2 1
+VM1689:2 2
+VM1689:2 3
+VM1689:2 4
+undefined
+for(var i in arr){
+    console.log(arr[i]);
+}
+VM1722:2 10
+VM1722:2 20
+VM1722:2 30
+VM1722:2 40
+VM1722:2 50
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]
+10 in arr;
+false
+dhoni;
+{name: 'MS Dhoni', age: 90, century: 70, four: 500, address: 'Jharkhand', …}First Name: "MS"address: "Jharkhand"age: 90century: 70four: 500name: "MS Dhoni"[[Prototype]]: Object
+name in dhoni;
+false
+0 in dhoni;
+false
+[{name : "PUMA" , price : 3000 , rating : 4 ,img : "https://imgs.search.brave.com/S_UR5MR6J10ZXN9aIwW7F0Xcn9NGIvKIPgjwXQm_BXs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzg2Lzc1LzIz/LzM2MF9GXzI4Njc1/MjM2OF90WkEyN2Ey/SVYwYTRzdTBZSmNZ/YTd3Nm9lRmZoQnRU/di5qcGc" , size : ["S" , "M" , "L" , "XL"]}, {name : "Reebok" , price : 6000 , rating : 4.6 ,img : "https://imgs.search.brave.com/S_UR5MR6J10ZXN9aIwW7F0Xcn9NGIvKIPgjwXQm_BXs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzg2Lzc1LzIz/LzM2MF9GXzI4Njc1/MjM2OF90WkEyN2Ey/SVYwYTRzdTBZSmNZ/YTd3Nm9lRmZoQnRU/di5qcGc" , size : ["S" , "M" , "L" , "XL"]}];
+(2) [{…}, {…}]
+var shoes = [{name : "PUMA" , price : 3000 , rating : 4 ,img : "https://imgs.search.brave.com/S_UR5MR6J10ZXN9aIwW7F0Xcn9NGIvKIPgjwXQm_BXs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzg2Lzc1LzIz/LzM2MF9GXzI4Njc1/MjM2OF90WkEyN2Ey/SVYwYTRzdTBZSmNZ/YTd3Nm9lRmZoQnRU/di5qcGc" , size : ["S" , "M" , "L" , "XL"]}, {name : "Reebok" , price : 6000 , rating : 4.6 ,img : "https://imgs.search.brave.com/S_UR5MR6J10ZXN9aIwW7F0Xcn9NGIvKIPgjwXQm_BXs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzg2Lzc1LzIz/LzM2MF9GXzI4Njc1/MjM2OF90WkEyN2Ey/SVYwYTRzdTBZSmNZ/YTd3Nm9lRmZoQnRU/di5qcGc" , size : ["S" , "M" , "L" , "XL"]}];
+undefined
+shoes[0].name;
+'PUMA'
+shoes[1].name;
+'Reebok'
+shoes[1]["name"];
+'Reebok'
+for(shoe of shoes){
+    console.log(shoe["name"]);
+}
+VM2211:2 PUMA
+VM2211:2 Reebok
+undefined
+var a = Symbol("yash");
+undefined
+var obj = {
+    [a] : "Hello";
+}
+VM2316:2 Uncaught SyntaxError: Unexpected token ';'
+var obj = {
+    [a] : "Hello"
+}
+undefined
+obj;
+{Symbol(yash): 'Hello'}Symbol(yash): "Hello"[[Prototype]]: Object
+obj[a];
+'Hello'

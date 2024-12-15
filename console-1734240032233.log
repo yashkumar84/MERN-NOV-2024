@@ -1,0 +1,71 @@
+function add(a , b){
+    console.log(a + b);
+    return a + b;
+}
+undefined
+add(10 , 20);
+VM125:2 30
+30
+var add1 = function (a , b){
+    return a + b;
+}
+undefined
+add1(20,30);
+50
+sum(10,40);
+function sum(a,b){
+    return a+ b;
+}
+50
+sum1(10 , 20);
+var sum1 = function (a , b){
+    return a + b;
+}
+VM494:1 Uncaught TypeError: sum1 is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM494:1
+
+var sum1 = function (a , b){
+    return a + b;
+}
+
+sum1(10 , 20);
+30
+// Asyncronous
+undefined
+setTimeout(function(){
+    console.log("Golu");
+} , 10000);
+1
+VM704:2 Golu
+setTimeout(function(){
+    console.log("Golu");
+} , 2000);
+2
+VM780:2 Golu
+// 3. Arrow Function
+undefined
+let arrow =  (a,b)=> a + b; 
+undefined
+arrow(30,40);
+70
+let arrow =  (a,b)=> {
+    console.log(a + b);
+    return a + b;
+}; 
+undefined
+arrow(10 , 50);
+VM1005:2 60
+60
+add(1,20);
+VM125:2 21
+21
+let obj = new add();
+VM125:2 NaN
+undefined
+obj;
+add {}
+let obj1 = new arrow();
+VM1327:1 Uncaught TypeError: arrow is not a constructor
+    at <anonymous>:1:12
+(anonymous) @ VM1327:1
