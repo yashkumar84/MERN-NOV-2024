@@ -1,0 +1,29 @@
+let arr = [10 , 20 , 30 , 40 , 50];
+undefined
+arr.reduce((acc,ele)=>acc + ele);
+150
+arr.reduce((acc,ele)=>acc + ele , 0);
+150
+arr.reduce((acc,ele)=>{
+    if(ele <= 30){
+        acc.push(ele);
+    }
+    return acc;
+} , []);
+(3) [10, 20, 30]
+let shoes = [{id : 1 , name : "PUMA" , size : [6,7,8,9,10] , price : 2000} , {id : 2 , name : "Adidas" , size : [6,7,8,9,10] , price : 3000} , {id : 3 , name : "Nike" ,size : [6,7,8,9,10] , price : 10000} , {id : 4 , name : "Balenciaga" , size : [6,7,8,9,10] , price : 50000}];
+undefined
+shoes.filter((ele)=>ele.id === 3);
+[{…}]0: {id: 3, name: 'Nike', size: Array(5), price: 10000}id: 3name: "Nike"price: 10000size: (5) [6, 7, 8, 9, 10][[Prototype]]: Objectlength: 1[[Prototype]]: Array(0)
+shoes.filter((ele)=>ele.id == 3);
+[{…}]0: {id: 3, name: 'Nike', size: Array(5), price: 10000}length: 1[[Prototype]]: Array(0)
+shoes.find((ele)=>ele.id == 3);
+{id: 3, name: 'Nike', size: Array(5), price: 10000}id: 3name: "Nike"price: 10000size: (5) [6, 7, 8, 9, 10][[Prototype]]: Object
+shoes.findIndex((ele)=>ele.id == 3);
+2
+shoes.forEach((ele)=>console.log(ele));
+VM1099:1 {id: 1, name: 'PUMA', size: Array(5), price: 2000}id: 1name: "PUMA"price: 2000size: (5) [6, 7, 8, 9, 10][[Prototype]]: Object
+VM1099:1 {id: 2, name: 'Adidas', size: Array(5), price: 3000}
+VM1099:1 {id: 3, name: 'Nike', size: Array(5), price: 10000}id: 3name: "Nike"price: 10000size: (5) [6, 7, 8, 9, 10][[Prototype]]: Object
+VM1099:1 {id: 4, name: 'Balenciaga', size: Array(5), price: 50000}
+undefined
