@@ -1,0 +1,170 @@
+function power(num , pow){
+    let ans;
+    setTimeout(()=>{
+      ans = n**pow;
+        return ans;
+    },3000);
+    return ans;
+}
+
+
+console.log(power(2 , 3));
+VM311:11 undefined
+undefined
+VM311:4 Uncaught ReferenceError: n is not defined
+    at <anonymous>:4:7
+(anonymous) @ VM311:4
+setTimeout
+power @ VM311:3
+(anonymous) @ VM311:11
+function power(num , pow){
+    let ans;
+    setTimeout(()=>{
+      ans = num**pow;
+        return ans;
+    },3000);
+    return ans;
+}
+
+
+console.log(power(2 , 3));
+VM317:11 undefined
+undefined
+function print(ans){
+    console.log("The Answer is: ",ans);
+}
+undefined
+function power(num , pow , print){
+    let ans;
+    setTimeout(()=>{
+      ans = num**pow;
+      print(ans);
+    },3000);
+    return ans;
+}
+
+
+console.log(power(2 , 3 , print));
+VM497:11 undefined
+undefined
+VM423:2 The Answer is:  8
+let promise = new Promise((res , rej)=>{
+    let ans;
+    setTimeout(()=>{
+      ans = num**pow;
+      res(ans);
+    },3000);
+}); 
+undefined
+promise;
+Promise {<pending>}
+VM608:4 Uncaught ReferenceError: num is not defined
+    at <anonymous>:4:7
+(anonymous) @ VM608:4
+setTimeout
+(anonymous) @ VM608:3
+(anonymous) @ VM608:1
+let promise = new Promise((res , rej)=>{
+    let ans;
+    setTimeout(()=>{
+      ans = 2**3;
+      res(ans);
+    },3000);
+}); 
+undefined
+promise;
+Promise {<fulfilled>: 8}
+promise;
+Promise {<fulfilled>: 8}
+let promise1 = new Promise((res , rej)=>{
+    let ans;
+    setTimeout(()=>{
+      ans = 2**3;
+      res(ans);
+    },3000);
+}); 
+undefined
+promise1;
+Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: 8
+promise1;
+Promise {<fulfilled>: 8}
+promise.then((data)=>console.log("Data is: ", data)).catch((err)=>console.log(err));
+VM937:1 Data is:  8
+Promise {<fulfilled>: undefined}
+let promise2 = new Promise((res , rej)=>{
+    let ans;
+    setTimeout(()=>{
+      ans = 2**3;
+      res(ans);
+    },3000);
+}); 
+
+promise2.then((data)=>console.log("Data is: ", data)).catch((err)=>console.log(err));
+Promise {<pending>}
+VM974:9 Data is:  8
+let promise3 = new Promise((res , rej)=>{
+    let ans;
+    setTimeout(()=>{
+      
+      rej("Cannot Resolve this Promise");
+    },3000);
+}); 
+
+promise3.then((data)=>console.log("Data is: ", data)).catch((err)=>console.log(err));
+Promise {<pending>}
+VM1048:9 Cannot Resolve this Promise
+// 2 ** 3
+//ans -- 3
+undefined
+// ans -- 3
+undefined
+//ans -- 3
+undefined
+power(2 , 3);
+undefined
+VM497:5 Uncaught TypeError: print is not a function
+    at <anonymous>:5:7
+(anonymous) @ VM497:5
+setTimeout
+power @ VM497:3
+(anonymous) @ VM1332:1
+function power(num , pow){
+    return num ** pow;
+}
+undefined
+function power(num , pow , print){
+    let ans;
+    setTimeout(()=>{
+      ans = num ** pow; 
+        print(ans);
+    },3000)
+}
+undefined
+function power(num , pow){
+    let promise = new Promise((res, rej)=>{
+        setTimeout(()=>{
+        res(num ** pow); 
+    },3000)
+    })   
+}
+undefined
+function power(num , pow){
+    let promise = new Promise((res, rej)=>{
+        setTimeout(()=>{
+        res(num ** pow); 
+    },3000)
+    })   
+
+    return promise;
+}
+undefined
+power(2 , 3).then((data)=>console.log("data is : " , data )).catch((e)=>console.log(e));
+Promise {<pending>}
+VM2140:1 data is :  8
+power(2 , 3).then((data)=>power(data , 3).then((data)=>power(data , 3).then((data)=>console.log(data)).catch((e)=>console.log(e)))).catch((e)=>console.log(e))).catch((e)=>console.log(e));
+VM2537:1 Uncaught SyntaxError: Unexpected token ')'
+power(2 , 3).then((data)=>power(data , 3).then((data)=>power(data , 3).then((data)=>console.log(data)).catch((e)=>console.log(e))).catch((e)=>console.log(e))).catch((e)=>console.log(e));
+Promise {<pending>}
+VM2545:1 134217728
+// async , await
+undefined
