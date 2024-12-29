@@ -1,0 +1,263 @@
+let arr = [10,20,30,40,50,60];
+undefined
+//Spread Operators
+undefined
+let arr1 = [...arr];
+undefined
+arr1;
+(6) [10, 20, 30, 40, 50, 60]
+let arr2 = arr;
+undefined
+arr2;
+(6) [10, 20, 30, 40, 50, 60]
+arr2[4] = 90;
+90
+arr2;
+(6) [10, 20, 30, 40, 90, 60]
+arr;
+(6) [10, 20, 30, 40, 90, 60]
+arr1;
+(6) [10, 20, 30, 40, 50, 60]
+arr = [1,2,3,4,5];
+(5) [1, 2, 3, 4, 5]
+arr1 = [6,7,8,9,0];
+(5) [6, 7, 8, 9, 0]
+arr2 = [...arr , ...arr1];
+(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+arr2;
+(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+let obj = {
+    id : 1,
+    name : "Yash",
+    age : 12
+}
+undefined
+let obj1 = {...obj};
+undefined
+obj1;
+{id: 1, name: 'Yash', age: 12}
+arr2 = [1,2,3,4,5,6,7,8,9,0];\
+VM898:1 Uncaught SyntaxError: Invalid or unexpected token
+//Rest Arguments
+undefined
+function add(...args){
+    console.log(args);
+}
+undefined
+add(1,2,3,4,5);
+VM1057:2 (5) [1, 2, 3, 4, 5]
+undefined
+function add(a , b , ...args){
+    console.log(args);
+}
+undefined
+function add(a , b , ...args){
+    console.log(a , b , args);
+}
+undefined
+add(10,20,30,40,50);
+VM1135:2 10 20 (3) [30, 40, 50]0: 301: 402: 50length: 3[[Prototype]]: Array(0)
+undefined
+function add(a , b , ...args){
+    let sum = a + b + args.reduce((acc , ele)=>acc + ele);
+    return sum;
+}
+undefined
+add(10,20,30,40,50);
+150
+add(10,20,30,40,50,60);
+210
+// TIK TAK TOE
+undefined
+// OOJS
+undefined
+function Fan(color , height , weight ){
+    this.color = color;
+    this.height = 10;
+    this.weight = 2;
+
+}
+undefined
+function Fan(color , height , weight ){
+    this.color = color;
+    this.height = height;
+    this.weight = weight;
+
+}
+undefined
+let obj = new Fan("Green" , 10 ,2 );
+undefined
+obj;
+Fan {color: 'Green', height: 10, weight: 2}color: "Green"height: 10weight: 2[[Prototype]]: Object
+class Fan{
+    constructor(color , height , weight){
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+    }
+}
+VM1722:1 Uncaught SyntaxError: Identifier 'Fan' has already been declared
+class Fan1{
+    constructor(color , height , weight){
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+    }
+}
+undefined
+let obj = new Fan1("Green" , 10 ,2 );
+undefined
+obj;
+Fan1 {color: 'Green', height: 10, weight: 2}color: "Green"height: 10weight: 2[[Prototype]]: Object
+typeof Fan1;
+'function'
+// protype and __proto__
+undefined
+// prototype and __proto__
+undefined
+Fan1.prototype.move  = function (){
+    console.log(this.height , this.weight , this.color);
+}
+ƒ (){
+    console.log(this.height , this.weight , this.color);
+}
+Fan1.prototype;
+{move: ƒ}move: ƒ ()arguments: nullcaller: nulllength: 0name: ""prototype: {}[[FunctionLocation]]: VM2131:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]constructor: class Fan1[[Prototype]]: Object
+let obj = new Fan1("Green" , 10 ,2 );
+undefined
+obj;
+Fan1 {color: 'Green', height: 10, weight: 2}color: "Green"height: 10weight: 2[[Prototype]]: Objectmove: ƒ ()constructor: class Fan1[[Prototype]]: Object
+obj.move();
+VM2131:2 10 2 'Green'
+undefined
+class Fan1{
+    constructor(color , height , weight){
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+    }
+}
+undefined
+class Fan1{
+    constructor(color , height , weight){
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+    }
+
+    move(){}
+}
+undefined
+class Fan1{
+    constructor(color , height , weight){
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+    }
+
+    move(){
+        console.log(this.height , this.weight , this.color);
+    }
+}
+undefined
+let obj = new Fan1("Green" , 10 ,2 );
+undefined
+obj;
+Fan1 {color: 'Green', height: 10, weight: 2}color: "Green"height: 10weight: 2[[Prototype]]: Objectconstructor: class Fan1move: ƒ move()[[Prototype]]: Object
+class Fan1{
+    constructor(color , height , weight){
+        this.color = color;
+        this.height = height;
+        this.weight = weight;
+    }
+
+    move1(){
+        console.log(this.height , this.weight , this.color);
+    }
+}
+undefined
+let obj = new Fan1("Green" , 10 ,2 );
+undefined
+obj;
+Fan1 {color: 'Green', height: 10, weight: 2}color: "Green"height: 10weight: 2[[Prototype]]: Objectconstructor: class Fan1move1: ƒ move1()length: 0name: "move1"arguments: (...)caller: (...)[[FunctionLocation]]: VM2312:8[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2][[Prototype]]: Object
+obj.move1();
+VM2312:9 10 2 'Green'
+undefined
+obj.__proto__;
+{move1: ƒ}constructor: class Fan1move1: ƒ move1()[[Prototype]]: Object
+Fan1.prototype === obj.__proto__;
+true
+obj.__proto__.move1();
+VM2312:9 undefined undefined undefined
+undefined
+obj.move1();
+VM2312:9 10 2 'Green'
+undefined
+let Animal = {
+    legs : 4,
+    eat(){
+        console.log("Animal Is Eating");
+    }
+}
+undefined
+let Dog = {
+    bark(){
+        console.log("Dog ")
+    }
+}
+undefined
+let Dog = {
+    bark(){
+        console.log("Dog Is Barking")
+    },
+    __proto__ : Animal
+    
+}
+undefined
+Dog.eat();
+VM2684:4 Animal Is Eating
+undefined
+Animal instanceof Object;
+true
+Object.prototype;
+{__defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, __lookupSetter__: ƒ, …}constructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+Animal.__proto__;
+{__defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, __lookupSetter__: ƒ, …}constructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: (...)get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+Object.prototype === Animal.__proto__;
+true
+Object === Animal;
+false
+class Vehical{
+    constructor(tyres , engine , color){
+        this.color = color;
+        this.engine = engine;
+        this.tyres = tyres;
+    }
+
+    acc (){
+        console.log("Vehical is Accelarating");
+    }
+}
+undefined
+class Car extends Vehical{
+    constructor(tyres , color , engine , type , fuelType){
+        super(tyres , engine , color);
+        this.type = type;
+        this.fuelType = fuelType;
+    }
+
+    speed(){
+        console.log("Speed Can Upto 200km/h");
+    }
+}
+undefined
+let car = new Car(4, "White" , "Turbo" , "Sedan" , "Petrol");
+undefined
+car;
+Car {color: 'White', engine: 'Turbo', tyres: 4, type: 'Sedan', fuelType: 'Petrol'}color: "White"engine: "Turbo"fuelType: "Petrol"type: "Sedan"tyres: 4[[Prototype]]: Vehical
+car.speed();
+VM3746:9 Speed Can Upto 200km/h
+undefined
+car.acc();
+VM3424:9 Vehical is Accelarating
+undefined
