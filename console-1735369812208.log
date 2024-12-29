@@ -1,0 +1,81 @@
+setTimeout(()=>{
+    console.log("Hello");
+},3000);
+1
+VM15:2 Hello
+let interval = setInterval(()=>{
+    console.log("Hello Yash");
+}, 3000);
+undefined
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+VM168:2 Hello Yash
+clearInterval(interval);
+undefined

@@ -1,0 +1,30 @@
+load_time_data_deprecated.js:4 crbug/1173575, non-JS module files deprecated.
+(anonymous) @ load_time_data_deprecated.js:4
+Math.random();
+0.1616518039789534
+Math.random() * 10;
+6.8637688459281465
+Math.random() * 10;
+0.4004222740343355
+Math.random() * 10;
+4.071888689859778
+Math.random() * 10;
+5.410966765935856
+Math.random() * 10;
+6.906941320811311
+Math.floor(Math.random() * 10);
+8
+setTimeout(()=>{
+    console.log("Hello");
+},3000);
+43
+VM453:2 Hello
+setTimeout(()=>{
+    console.log("Hello");
+},3000);
+44
+VM456:2 Hello
+let arr = [67,56,90,24,45,89,78];
+undefined
+arr.sort((a , b)=> a - b);
+(7) [24, 45, 56, 67, 78, 89, 90]0: 241: 452: 563: 674: 785: 896: 90length: 7[[Prototype]]: Array(0)
